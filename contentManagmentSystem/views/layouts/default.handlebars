@@ -1,0 +1,18 @@
+<!-- Here we are defining the path of diff handlebars if that handlebar is defined in any other directory
+and also this how we define our partials
+ and basically a 'Partial' is is define as a function or method which is defined in one directory and calling or passing it any other directory -->
+{{>default/header}}
+
+<body>
+<!-- Navigation -->
+{{>default/top-navigation}}
+
+<!-- Page Content -->
+<div class="container">
+    <!-- here we defined three curly braces and didnt defined any path so it will take on the content of index.handlebars file and update the UI accordingly -->
+    {{{ body }}}
+
+</div>
+<!-- /.container -->
+{{>default/footer}}
+
